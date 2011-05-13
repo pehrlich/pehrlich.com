@@ -146,7 +146,6 @@ var blogJs = {
                     leftEdgeX = 0, rightEdgeX = 0, margin = 10, newMargin,
                     offScreenLeft = Math.abs(parseInt($("#scrollbox ul").css('marginLeft'))),
                     maxViewableX = offScreenLeft + closureWidth;
-            ;
 
 
             $("#scrollbox li").each(function(index, element) {
@@ -290,5 +289,4 @@ String.prototype.linkify = function (options) {
  TODOS:
  Animate a sliding box for top_posts
  provide some images or personality to projects
- allow 3 line tweets
  */

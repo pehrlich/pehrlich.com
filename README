@@ -1,0 +1,8 @@
+Includes some reasonable examples of the following:
+
+ - Google Analytics click and external link tracking
+ - Twitter Search API w/ JSONP
+ - Namespaced Javascript features, scoping and closures, timeouts
+ - sass cross-browser css3
+ - localStorage caching
+ - from scratch slider implementation
