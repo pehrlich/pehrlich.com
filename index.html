@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <!-- Thanks for reading the source! Enjoy your day. -->
+    <title>Peter Ehrlich</title>
+
+    <link type="text/css" href="css/reset.css" rel="stylesheet"/>
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'>
+
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> (404) -->
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/embedly.js"></script>
+    <script type="text/javascript" src="js/main.js?v=1"></script>
+
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1102291-14']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+
+<a name="intro"></a>
+
+<div class="column">
+
+    <h1 id="logo">Peter Ehrlich</h1>
+
+    <!--<img style="padding:60px;" src="img/profile_2010.jpg"/>-->
+
+    <div class="links_out">
+        <a href="http://twitter.com/ehrlicp" class="domain_change"
+           data-name="Twitter">Twitter</a> &mdash;
+        <a href="http://www.quora.com/peter-ehrlich" class="domain_change"
+           data-name="Quora">Quora</a> &mdash;
+        <a href="http://www.couchsurfing.org/people/pehrlich/" class="domain_change"
+           data-name="CouchSurfing">CouchSurfing</a> &mdash;
+        <a href="http://www.linkedin.com/pub/peter-ehrlich/" class="domain_change"
+           data-name="LinkedIn">LinkedIn</a> &mdash;
+        <a href="http://github.com/pehrlich/" class="domain_change"
+           data-name="Github">Github</a>
+    </div>
+    <br/>
+
+    <div id="intro">
+        <span title='The "What"'>I create things</span>,
+        <span title='The "How"'>    I do web development</span>,
+        <span title='The "Why"'>and I love community</span>.
+        <a class="no_load" id="whois_link" href="#" onclick="toggle_who(event);return false;">
+            I can elaborate.
+        </a>
+    </div>
+</div>
+
+<div class="section live_inset">
+    <div class="top_posts blog">
+        <ul>
+            <li><a class="button active left recent"
+                   href="http://pehrlich.posterous.com/add-some-music-to-your-coding"
+                   onclick="blogJs.excerpt_change_click($(this));return false;"
+                    >Latest Post</a><span class="left"> &nbsp; &#8226; &nbsp; Top Posts:</span></li>
+            <li class="scrollbox" id="scrollbox">
+                <ul>
+                    <li><a class="button" onclick="blogJs.excerpt_change_click($(this));return false;"
+                           href="http://pehrlich.posterous.com/and-what-just-happened-w-photos">and what
+                        just happened? (w/ photos)</a></li>
+                    <li><a class="button" onclick="blogJs.excerpt_change_click($(this));return false;"
+                           href="http://pehrlich.posterous.com/hello-quora">Schools (was: Hello
+                        Quora) </a>
+                    </li>
+                    <li><a class="button" onclick="blogJs.excerpt_change_click($(this));return false;"
+                           href="http://pehrlich.posterous.com/the-mental-block">The mental block </a>
+                    </li>
+                </ul>
+
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+
+    <article id="blog">
+        <h2 class="main">
+            Posterous
+        </h2>
+
+
+        <div class="introtext">
+            <h2>Add some music to your coding</h2>
+            <span>As jotting down plans for a twitter extension idea (increasing the uniqueness of users by
+                indicating how frequently you interact with their tweets, and making them stylistically more
+                individually recognizable), I found myself jotting notes on the flip side of a forgotten spec
+                from a few days ago.</span>
+        </div>
+        <div class="center linkout">
+            &mdash; <a href="http://blog.pehrlich.com" class="domain_change" data-name="Posterous (continue reading)">
+            Continue reading on Posterous</a> &mdash;
+        </div>
+
+        <script type="text/javascript">
+//            window.blogJs.excerpt_change_click($('.top_posts .recent'));
+            //            $('#scrollbox .button').mouseover(blog.nav.onmouseover);
+        </script>
+    </article>
+</div>
+
+<div class="section live_inset creations">
+
+<a name="creations"></a>
+
+<div class="top_posts">
+    <ul>
+        <li><a href="#" class="button active rounded_tl"
+               onclick="show_portfolio(this);return false;">Portfolio Pieces</a></li>
+        <li><a href="#" class="button rounded_tr" onclick="show_hobby(this);return false;">Hobby Projects</a></li>
+    </ul>
+</div>
+<div class="clear"></div>
+
+
+<div id="portfolio_items">
+
+    <div id="project_nav">
+        <a class="no_load button active" href="#" onclick="portfolio.show_new();return false;">Pertinent</a
+                >|<a class="no_load button" href="#" onclick="portfolio.show_recent();return false;">Recently Shelved</a
+            >|<a class="no_load button" href="#" onclick="portfolio.show_graveyard();return false;">Graveyard</a>
+    </div>
+
+
+    <div class="sliding_frame">
+        <div id="new_items">
+            <div class="creation small">
+                <div class="description">
+                    <h3>
+                        <!--<a class="domain_change" href="http://www.gitfight.com" data-name="GitFight">Git Fight (beta)</a></h3>-->
+                        Git Fight (alpha)</h3>
+
+                    <p>Because there's so much amazing high quality code in the world, sometimes the tough
+                        problem becomes only choosing a favorite library. Enter GitFight, a tool which combatively
+                        judges two opposing GitHub libraries, in a wonderful exuberance of ajax and lightning bolts</p>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <div class="creation small">
+                <div class="description">
+                    <h3><a class="domain_change" href="http://get-them-a-drink.com/" data-name="BeerRunner">Get Them A
+                        Drink (alpha)</a></h3>
+
+                    <p>A stroke of genius and compassion from a fellow traveler will spread random acts of kindness
+                        around the world. It will allow anyone to purchase a beverage for someone at random accross the
+                        globe,
+                        and bring them feedback for their gift.</p>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <div class="creation small">
+                <h3><a class="domain_change" href="http://Airbnb.com/" data-name="Airbnb">Airbnb.com</a></h3>
+                <span class="detail">Summer 2010</span>
+
+                <div class="description">
+                    <p>
+                        Four months at Airbnb helped me realize strengths in bringing out the best in people.
+                        I learned volumes on big site design and development, legends on managing userbase
+                        and dedication to every individual, and above all, how to keep every member of a team
+                        filled with energy and dedicated to their task.
+                    </p>
+                </div>
+            </div>
+
+            <div class="creation small">
+                <div class="description">
+                    <h3>
+                        Your Startup?</h3>
+
+                    <p>If you're part of a company that cares about the world and will be successful, get in touch!</p>
+
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+        </div>
+
+        <a class="domain_change">
+            <div id="recent_items">
+                <div class="creation small">
+                    <h3><a href="http://www.Muzunku.com" class="domain_change"
+                           data-name="Muzunku">Muzunku.com</a>
+                    </h3>
+                    <span class="detail">March 2011</span>
+
+                    <div class="description">
+                        <p>Inspired by the success of Rosetta Stone language software, and the increasing worth of
+                            the collaborative web, this Startup Chile application would allow users across the globe
+                            to teach their language without knowing any other.</p>
+
+                        <p>Important applications of this software would be allowing those in the third world to earn a
+                            first world salary, the preservation of endangered languages, and encouraging international
+                            travel</p>
+
+                        <p>Hut-based video pitch on-site</p>
+                    </div>
+                </div>
+
+                <div class="creation small">
+                    <h3><a href="http://www.Bumsocial.com" class="domain_change"
+                           data-name="Bumsocial">Bumsocial.com</a>
+                    </h3>
+                    <span class="detail">March 2011</span>
+
+                    <div class="description">
+                        <p>Bumsocial would bring transparency and authentication to individual donations to the
+                            homeless.
+                            Inspired in part by Fit-Bit's feel-good-about-yourself philosophy, this would combine
+                            mobile location and photo data with micro donations to allow tracking of both donations
+                            sent and received.</p>
+
+                        <p>More data allows us to become better at helping.</p>
+
+                        <p>See associated <a data-name="Bumsocial blog" class="domain_change"
+                                             href="http://blog.pehrlich.com/do-hobos-dream-of-homeless-sheep">blog
+                            entry</a> as well.</p>
+                    </div>
+                </div>
+
+                <div class="creation small">
+                    <h3><a href="http://github.com/pehrlich/jquery-ujs" class="domain_change"
+                           data-name='jquery-ujs extensions'>jquery-ujs
+                        extensions</a></h3>
+                    <span class="detail">February 2011 &mdash; present</span>
+
+                    <div class="description">
+                        <p>Rails provides an extremely well implemented set of jQuery extensions. This expands
+                            the work done their with synchronizing experimental tools for ajax callbacks, history
+                            management,
+                            and declarative dynamic content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="graveyard_items">
+                <div class="creation small">
+                    <h3>Haven Carpool</h3>
+                    <span class="detail">Winter 2010</span>
+
+                    <div class="description">
+                        <p>Invented to provide a carpooling application for Clarkson University campus,
+                            this would have been integrated with the school's declining balance payment system to
+                            encourage students to share their transportation with others.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+
+<div id="hobby_items">
+    <div class="creation">
+        <h3>Domino-Bot</h3>
+
+        <p>This sets up dominos in patterns to be knocked down. Robotically controlled (w/ Lego NXT),
+            programmable
+            pattern creation.
+        </p>
+
+        <div style="text-align:center; padding: 20px 0;">
+            <object width="640" height="385" style="margin: auto; text-align: center; ">
+                <param name="movie" value="http://www.youtube.com/v/OOAn7MbHnxY&hl=en_US&fs=1&"></param>
+                <param name="allowFullScreen" value="true"></param>
+                <param name="allowscriptaccess" value="always"></param>
+                <embed src="http://www.youtube.com/v/OOAn7MbHnxY&hl=en_US&fs=1&"
+                       type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"
+                       width="640" height="385"></embed>
+            </object>
+        </div>
+
+        <blockquote>&ldquo;One of the most impressive pieces of mechanical engineering for the NXT that I have
+            seen.&rdquo;</blockquote>
+
+        <p>Visit the <a
+                href='http://lejos.sourceforge.net/forum/viewtopic.php?t=1542'
+                data-name="Lejos forum" class="domain_change">LeJOS Forum thread</a>
+            for pictures and discussion.
+        </p>
+        </br>
+    </div>
+
+    <div class="creation">
+        <h3>Project Argosy</h3>
+
+        <p>One truck 6x12" truck. Eleven Months. Four motors, five pneumatic cylinders, three springs, a giant
+            pile
+            of bricks. One complete creation of awesome.</p>
+
+        <p>Started May 2006, this was a project to cram as much finely tuned fully accurate functionality as
+            possible in to as small a space as possible, my favorite style. Inspired by many model builders
+            before
+            me, I decided to make my own path in the world of Lego truck making, with a smaller, cheaper, more
+            highly functional, more carefully designed model than most ever seen before. It was built only one
+            step
+            at a time, with only a few pictures of the actual truck to work from. The end result, however, was
+            beautiful and very <em>very</em> red.</p>
+
+        <div style="text-align:center;">
+            <img class="photo" style="margin: auto; padding: 20px 0;" src="img/argosy.jpg">
+        </div>
+
+        <p>Functionality includes: Drive, Pneumatically actuated two-speed transmission, steering, front-axle
+            suspension, correct Ackermann steering, true-to-life pneumatic staircases, LED headlights, automatic
+            compressor, and fully tilting cab.
+        </p>
+
+        <p style="text-align:center;">
+            <a href="http://projectargosy.blogspot.com/" class="domain_change"
+               data-name="Argosy Blog">read the blog</a>
+            &mdash; or &mdash;
+            <a href='http://www.brickshelf.com/cgi-bin/gallery.cgi?f=185057' class="domain_change"
+               data-name="Argosy Gallery">view the gallery</a>
+        </p>
+
+        <div style="text-align:center; padding-top:20px;">
+            <img class="photo" src="img/argosyMontage.jpg">
+        </div>
+    </div>
+
+
+    <!-- copyable code:
+    <div class="creation">
+        <img class="main" src=""/>
+        <h3></h3>
+        <div class="abridged">
+            <span class="summary"></span>
+        </div>
+    </div>
+    -->
+
+</div>
+
+
+</div>
+
+<div id="tweet">
+    <a href="http://www.twitter.com/ehrlicp">
+        <img src="img/black-web20-twitter-icon-1.png" alt="" class="bird"/>
+    </a>
+
+    <div class="indicator">
+        <!--<img src="img/twitter_icon_11.png" alt="" class="bird"/>-->
+        <div class="progressBar"></div>
+    </div>
+    <div class="content"></div>
+</div>
+
+<!--<div id="footer">-->
+<!--Life is good.-->
+<!--</div>-->
+
+<div id="whoisthisguy">
+
+
+    <div class="body">
+        <div class="close" style="margin-top: -40px; margin-bottom: 40px;">
+            <a class="close" href="#" onclick="toggle_who();return false;">Close</a>
+        </div>
+
+        <p><strong>Hello!</strong></p>
+
+        <p><em>This is how I am:</em>
+            <br/>I grew up on a farm in upstate New York, son of two dairy cow veterinarians. I am in-between a brother
+            and
+            sister, yes
+            I had a lot of free time for thinking, and yes it gets pretty cold up there. I've was homeschooled all the
+            way
+            until college,
+            just because my parents didn't have a lot of respect for our American school system. What I learned and who
+            I am
+            because
+            of this has lead me to a great deal of interesting places and wonderful people. And for some reason, totally
+            beyond me,
+            this causes me to leave a good impression on most that I meet.</p>
+
+        <p>When I was 16, I applied to a university and got in to it, doing Mechanical Engineering. It turns out that
+            this
+            was a good idea,
+            because it brought
+            me in to the more of the world. It was also a bad idea, because it was still very cold up there and we
+            didn't get a lot of attention from the anywhere important to me.</p>
+
+        <p>By Summer 2010, I had been teaching myself web development for a while and had heard that if I went to
+            Silicon
+            Valley,
+            I could get a job pretty quickly. So with a fallback plan of freelancing in Argentina (why not?), I went
+            forward
+            with
+            booking a room on Airbnb.com the night before I left. This certainly had a powerful impact on things, as
+            they
+            were hiring,
+            Over three interviews in one weekend I passed various tests, and was hired in to the most powerful and
+            vibrant
+            community I have ever even witnessed.</p>
+
+
+        <p>After four months of living and breathing pure Airbnb I went back to school, and required all the persuasion
+            from teachers,
+            family, relatives and best friends not to drop out and go help found a Chicago-based school of Lego&mdash; I
+            would
+            have gone
+            but that all the people
+            <a class="domain_change" data-name='Outbound Links'
+               href="http://techcrunch.com/2010/09/27/peter-thiel-drop-out-of-school/">
+                telling me to leave</a>, I didn't know myself. I kept busy with entrepreneurial
+            machinations, but
+            eventually had had too much. Half way through the Vietnam episode of top gear, I texted a friend and bought
+            tickets to China
+            for the day after christmas, stopping out six art credits short of my engineering degree.</p>
+
+        <p>I've been traveling since. I've written some interesting things on my blog. Myanmar (Burma) was the best
+            place
+            to spend
+            a month, for living in a country without technology more than an overloaded built pickup truck will really
+            bring
+            you
+            back to your roots. And it showed in the people, despite their feudally genocidal government. There are no
+            suicides there,
+            there is no depression. Only. Community.</p>
+
+        <p>There we have it. Its not much, but its been nicely packed.</p>
+
+        <p>
+            <br/>Extrapolating from that, here's my life goal:</p>
+
+        <p>Increase social capital in the world. That is, people make people happy, and I want people to be happy.</p>
+
+        <p>There were other things on this list, but I think that they are but auxiliary.</p>
+        <br/>
+
+        <p>Finally, here is a list of everything I know:</p>
+
+        <p>Believe and be honest in yourself, always.</p>
+
+        <p>Make alone time, always. Hours every week, and days every year.</p>
+        <br/>
+
+        <p>Sincerely,
+            <br/>--Peter
+        </p>
+
+        <div class="worldmap">
+            <img src="img/political-thin-transparent-world-map-b4a-custom.png"/>
+            <!-- Thanks http://www.outline-world-map.com/ for the graphic -->
+        </div>
+
+        <div class="close">
+            <a href="#" onclick="toggle_who();return false;">Close</a>
+        </div>
+
+    </div>
+
+
+</div>
+<img id="background" src="img/00_prism3.jpg"/>
+<!-- couldn't find who this image came from, years ago. -->
+
+</body>
+</html>

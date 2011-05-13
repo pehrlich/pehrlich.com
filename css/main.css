@@ -1,0 +1,407 @@
+/* cool freakin shit: http://www.catswhocode.com/blog/8-examples-of-stunning-css3-text-effects */
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #141011;
+  position: relative; }
+
+body {
+  font-family: 'Times New Roman';
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.column {
+  width: 760px;
+  margin: 60px auto;
+  padding: 60px;
+  -moz-border-radius: 7px;
+  /* FF1+ */
+  -webkit-border-radius: 7px;
+  /* Saf3-4, iOS 1+, Android 1.5+ */
+  border-radius: 7px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  -moz-box-shadow: 0px 0px 10px black;
+  /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 10px black;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 10px black;
+  /* Opera 10.5, IE9, Chrome 10+ */
+  overflow: hidden; }
+
+#logo {
+  font-size: 50pt;
+  margin-bottom: 20px;
+  padding-top: 10px; }
+
+#intro {
+  padding: 60px 0px;
+  letter-spacing: 1px; }
+
+img {
+  border: 0; }
+
+a {
+  color: #5a4e70;
+  text-decoration: none; }
+
+a:hover {
+  color: #68646e;
+  text-decoration: underline; }
+
+.creation {
+  text-align: left;
+  clear: both;
+  margin: 60px 0; }
+  .creation a {
+    text-decoration: underline; }
+  .creation span.detail {
+    font-size: 10pt;
+    margin-top: -20px;
+    display: block; }
+
+.creation.small {
+  padding: 1em 1em;
+  position: relative; }
+
+.section {
+  clear: both;
+  margin: 60px 0; }
+
+.live_inset {
+  overflow: hidden;
+  width: 760px;
+  margin: 60px auto;
+  padding: 60px;
+  color: #eee;
+  text-shadow: 0px -1px 1px #111111;
+  font-size: 11pt;
+  text-align: left;
+  font-family: "lucida grande", lucida, tahoma, helvetica, arial, sans-serif;
+  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.9);
+  -moz-border-radius: 7px;
+  /* FF1+ */
+  -webkit-border-radius: 7px;
+  /* Saf3-4, iOS 1+, Android 1.5+ */
+  border-radius: 7px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0px 0px 10px black;
+  /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 10px black;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 10px black;
+  /* Opera 10.5, IE9, Chrome 10+ */ }
+  .live_inset a {
+    color: #fff; }
+  .live_inset a:visited {
+    color: #fff; }
+
+::selection {
+  background: rgba(200, 190, 100, 0.8);
+  /* Safari */ }
+
+::-moz-selection {
+  background: rgba(200, 190, 100, 0.8);
+  /* Firefox */ }
+
+h2.main {
+  padding-top: 20px;
+  font-size: 24pt;
+  text-align: center;
+  margin: 0;
+  color: #fff; }
+
+#profile_pic {
+  width: 250px;
+  padding: 10px;
+  float: left; }
+
+#twitter_feed {
+  float: left;
+  width: 490px; }
+
+.rounded_tl {
+  border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -webkit-border-top-left-radius: 7px; }
+
+.rounded_tr {
+  border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -webkit-border-top-right-radius: 7px; }
+
+.top_posts > ul {
+  width: 1000px; }
+
+.top_posts {
+  padding: 0;
+  border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -webkit-border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -webkit-border-top-left-radius: 7px;
+  background-color: #444;
+  -moz-box-shadow: 0px 0px 5px #666666;
+  /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 5px #666666;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 5px #666666;
+  /* Opera 10.5, IE9, Chrome 10+ */
+  background-color: #393939;
+  overflow: hidden;
+  margin: -60px;
+  margin-bottom: 0;
+  width: 880px; }
+  .top_posts span, .top_posts a.button {
+    padding: 10px;
+    /* could make padding 10px 16px a la golden ratio. will wait for js on top_posts slider */ }
+  .top_posts a.button {
+    margin: 0;
+    display: block;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.1s; }
+  .top_posts a.button:hover {
+    background-color: #444; }
+  .top_posts a.button.active {
+    background-color: #A94;
+    text-shadow: none;
+    -moz-box-shadow: 0px 0px 5px #aa9944;
+    /* FF3.5+ */
+    -webkit-box-shadow: 0px 0px 5px #aa9944;
+    /* Saf3.0+, Chrome */
+    box-shadow: 0px 0px 5px #aa9944;
+    /* Opera 10.5, IE9, Chrome 10+ */ }
+  .top_posts a.recent {
+    border-top-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px; }
+  .top_posts ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 40px;
+    margin: 0; }
+    .top_posts ul li {
+      float: left; }
+      .top_posts ul li span {
+        padding-right: 10px; }
+    .top_posts ul li.scrollbox {
+      width: 650px;
+      overflow: hidden; }
+      .top_posts ul li.scrollbox ul {
+        width: 1500px; }
+
+.creations .top_posts li {
+  width: 440px; }
+.creations .top_posts a.button {
+  font-size: 14pt; }
+
+#project_nav {
+  text-align: center;
+  width: 440px; }
+  #project_nav a {
+    padding: 0px 10px; }
+  #project_nav a.active {
+    color: #BA5;
+    text-shadow: none; }
+
+#blog {
+  text-shadow: 0px -1px 1px #111111;
+  padding: 10px; }
+  #blog .introtext h2 {
+    color: #eee; }
+  #blog h2 {
+    text-align: center; }
+    #blog h2 span {
+      font-style: italic; }
+  #blog .introtext {
+    padding: 60px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5; }
+  #blog div.linkout {
+    padding: 20px; }
+
+#hobby_items {
+  display: none; }
+
+#portfolio_items {
+  margin: 0 -60px;
+  overflow-x: hidden; }
+
+#portfolio_items .sliding_frame {
+  width: 5000px; }
+
+#portfolio_items .sliding_frame > div {
+  float: left;
+  width: 760px;
+  margin: 0 60px; }
+
+#whoisthisguy {
+  display: none;
+  font-family: 'Courier', monospace;
+  /*        text-shadow: 0px -2px 2px #EEF;*/
+  font-size: 11pt;
+  color: #000;
+  text-shadow: 0px 0px 1px #ccc;
+  width: 100%;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 60px 0; }
+  #whoisthisguy .close {
+    text-align: center; }
+  #whoisthisguy .body {
+    position: relative;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 0px 15px black;
+    /* FF3.5+ */
+    -webkit-box-shadow: 0px 0px 15px black;
+    /* Saf3.0+, Chrome */
+    box-shadow: 0px 0px 15px black;
+    /* Opera 10.5, IE9, Chrome 10+ */
+    display: none;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    width: 700px;
+    padding: 60px 100px; }
+  #whoisthisguy .worldmap {
+    margin: 60px -30px; }
+
+/*        .twtr-ft img{
+			@include opacity(0.8);
+        }*/
+blockquote {
+  font-size: 14pt;
+  padding: 1em 1em;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px #CCC;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.55)), to(rgba(255, 255, 255, 0.85)));
+  /* Saf4+, Chrome */
+  text-align: center;
+  width: 500px;
+  color: #227;
+  text-shadow: 0px -1px 1px white;
+  font-style: italic;
+  margin: 1em auto; }
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 1000px; }
+
+.visit_link {
+  margin-top: 10px;
+  text-align: center; }
+
+#tweet {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 450px;
+  min-height: 50px;
+  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.8);
+  -moz-border-radius: 7px;
+  /* FF1+ */
+  -webkit-border-radius: 7px;
+  /* Saf3-4, iOS 1+, Android 1.5+ */
+  border-radius: 7px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px;
+  color: #ddd;
+  font-size: 11pt;
+  line-height: 18pt;
+  font-family: "lucida grande", lucida, tahoma, helvetica, arial, sans-serif;
+  overlow: hidden; }
+  #tweet a {
+    color: #fff; }
+  #tweet .indicator {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    z-index: 2;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3); }
+  #tweet .bird {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 3; }
+  #tweet .content {
+    margin-left: 60px; }
+  #tweet .progressBar {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    background-color: white;
+    -moz-box-shadow: 0px 0px 6px white;
+    /* FF3.5+ */
+    -webkit-box-shadow: 0px 0px 6px white;
+    /* Saf3.0+, Chrome */
+    box-shadow: 0px 0px 6px white;
+    /* Opera 10.5, IE9, Chrome 10+ */ }
+
+#footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 880px;
+  margin: 0px auto;
+  padding: 8px;
+  font-family: 'Courier', monospace;
+  /*        text-shadow: 0px -2px 2px #EEF;*/
+  font-size: 11pt;
+  color: #000;
+  text-shadow: 0px 0px 1px #ccc;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  -moz-box-shadow: 0px 0px 5px #cccccc;
+  /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 5px #cccccc;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 5px #cccccc;
+  /* Opera 10.5, IE9, Chrome 10+ */ }
+
+.clear {
+  clear: both; }
+
+.center {
+  text-align: center; }
+
+.left {
+  float: left; }
