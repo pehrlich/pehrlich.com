@@ -289,4 +289,5 @@ String.prototype.linkify = function (options) {
  TODOS:
  Animate a sliding box for top_posts
  provide some images or personality to projects
+ delay tweet timer if out of focus: http://stackoverflow.com/questions/1760250/how-to-tell-if-browser-tab-is-active
  */
